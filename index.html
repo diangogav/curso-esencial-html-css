@@ -7,25 +7,30 @@
 </head>
 <body>
   <header>
-    <nav>
-      <p>Setup</p>
+    <details open>
+      <summary>
+        Setup
+      </summary>
       <ol>
-        
         <li> <a href="#google-chrome"> Google Chrome</a></li>
         <li><a href="#vsc">Visual Studio Code</a></li>
         <li><a href="#figma">Figma</a></li>
         <li><a href="#github">GitHub</a></li>
       </ol>
-      <p>Conceptos esenciales del Desarrollo Web</p>
+    </details>
+    <details>
+      <summary>
+        Conceptos esenciales del Desarrollo Web
+      </summary>
       <ol>
-        <li>Qué es HTML</li>
-        <li>Etiquetas</li>
-        <li>DOM</li>
-        <li>Semántica</li>
-        <li>Atributos</li>
-        <li>Semántica</li>
+        <li><a href="#html">Qué es HTML</a></li>
+        <li><a href="#labels">Etiquetas</a></li>
+        <li><a href="#dom">DOM</a></li>
+        <li><a href="#semantic">Semántica</a></li>
+        <li><a href="#attributes">Atributos</a></li>
+        <li><a href="#css">CSS</a></li>
       </ol>
-    </nav>
+    </details>
   </header>
   <h1>Curso esencial de HTML y CSS</h1>
   <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de contenidos, en el nivel 2 aprenderás de componentes y en 3 sobre layouts.</p>
@@ -54,13 +59,29 @@
 
   <hr>
   <h2>Conceptos esenciales del Desarrollo Web</h2>
-  <h3>Qué es HTML</h3>
+  <h3 id="html">Qué es HTML</h3>
   <p>
     Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado y la estructura del contenido.
+    <code>
+      const name = 'your name'
+    </code>
   </p>
-  <img src="images/html.png" alt="Ejemplo de estructura de código HTML" title="Ejemplo de estructura de código HTML">
+  <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre>
+  <!-- <img src="images/html.png" alt="Ejemplo de estructura de código HTML" title="Ejemplo de estructura de código HTML"> -->
 
-  <h3>Etiquetas</h3>
+  <h3 id="labels">Etiquetas</h3>
   <p>
     Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene características y usos diferentes aunque visualmente den un resultado similar.
   </p>
@@ -69,23 +90,23 @@
     Muchas etiquetas son fácil de diferencias como los headings o las imágenes y otras diferentes como header, footer, section o div, aquí es donde la semántica será la respuesta y si sabemos un poco de inglés también podremos darnos una pequeña idea de su uso pero en este curso vamos a usar las más importantes y que serán parte de tu día a día como Software Developer.
   </p>
 
-  <h3>DOM</h3>
+  <h3 id="dom">DOM</h3>
   <p>
     El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un árbol genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos identificar dependencias, herencias en css y que tan complejo es nuestro proyecto.
   </p>
   <img src="images/dom.png" alt="Estructura de árbol que representa al Document Object Model">
 
-  <h3>Semántica</h3>
+  <h3 id="semantic">Semántica</h3>
   <p>
     La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será meramente decorativos y no deben significar nada pero otros serán títulos y deberán estar en diferente jerarquías o alguna secciones serán más relevantes que otras, esto ayudará a los motores de búsqueda como Google o Duck Duck Go a diferenciar tu contenido, categorizar y será la herramientas más valiosa para estar en los primeros resultados de búsqueda SEO. También ayudará a la accesibilidad de tu sitio web, para que personas con habilidades diferentes puedan entender cada contenido.
   </p>
 
-  <h3>Atributos</h3>
+  <h3 id="attributes">Atributos</h3>
   <p>
     Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos funcionan en solo alguna etiquetas como src
   </p>
 
-  <h3>CSS</h3>
+  <h3 id="css">CSS</h3>
   <p>
     Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML
   </p>
@@ -119,7 +140,7 @@
     <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
     <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
   </ul>
-
+  <script src="./scripts/index.js"></script>
 </body>
 </html>
 
