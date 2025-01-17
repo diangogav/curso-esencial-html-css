@@ -1,7 +1,7 @@
 body {
   color: #B8C1EC;
   font-size: 16px;
-  /* background-color: #232946; */
+  background-color: #232946;
 }
 
 a {
@@ -10,6 +10,20 @@ a {
 
 header {
   font-size: 14px;
+  color: #B8C1EC;
+}
+
+header a {
+  color: #B8C1EC;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #FFFFFE;
+}
+
+nav details summary {
+  color: #FFFFFE;
 }
 
 h1 {
