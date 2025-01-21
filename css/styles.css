@@ -35,6 +35,7 @@
 body {
   color: var(--gray);
   background-color: #232946;
+  font-family: "Montserrat", serif;
 }
 
 a {
