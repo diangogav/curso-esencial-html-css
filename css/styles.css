@@ -73,3 +73,15 @@ h3 {
   font-size: 24px;
   /* font-size: 1.25em; */
 }
+
+.section-content {
+  counter-reset: titleList;
+}
+
+.section-content h3 {
+  counter-increment: titleList;
+}
+
+.section-content h3::before {
+  content: counter(titleList, decimal) ". "
+}
